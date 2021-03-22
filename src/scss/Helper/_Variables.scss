@@ -1,0 +1,104 @@
+// Chứa các biến
+
+// biến màu
+$color-white-0: #fff; //default
+$color-black-0: #000;
+$color-gray-0: #7c7c80;
+$color-gray-1: #e6e6eb;
+// #88d0ff
+// #db8cfc
+
+// biến font size
+$fs-0: 15px; //default
+$fs-1: 13px;
+$fs-2: 20px;
+$fs-3: 24px;
+//Còn 1 font-size: 36px;
+$fs-4: 40px;
+
+// margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+//variable border-radius
+$border-radius: 2px;
+$border-radius-1: 50%;
+
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 40px;
+
+
+//variable line-height
+$line-height-0: 1.43; //default
+
+
+//variable font-weight
+$fw-light: 400;
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+//position
+$po-absolute: absolute;
+$po-relative: relative;
+$po-fixed: fixed;
+
+// top
+$top-1: 0;
+$top-2: 5%;
+$top-3: 10%;
+$top-4: 20%;
+$top-5: 30%;
+
+// left
+$left-1:0;
+$left-2:5%;
+$left-3:10%;
+$left-4:20%;
+
+// right
+$right-1:0;
+$right-2:5%;
+$right-3:10%;
+$right-4:20%;
+
+// bottom
+$bottom-1: 0;
+$bottom-2: 5%;
+$bottom-3: 10%;
+$bottom-4: 20%;
+
+// height
+$height-1: 50px;
+$height-2: 100px;
+$height-3: 170px;
+$height-4: 200px;
+
+//Width:
+$width-1: 100%;
+$width-2: 80%;
+$width-3: 50px;
+$width-4: 100px;
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 767.89px,
+    'small' : 576px,
+    'mobile' : 420px,
+    'small-mobile': 376px,
+);
+
+%fade-bg {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}

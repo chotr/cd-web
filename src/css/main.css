@@ -82,8 +82,8 @@ header {
   content: '';
   display: block;
   height: 2px;
-  background-image: linear-gradient(to right, #fbbd61, #ec7532);
-  box-shadow: 0 0 20px 0 #fbbd61;
+  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+  box-shadow: 0 0 20px 0 #88d0ff;
   /* ẩn chiều dài đường line */
   width: 0;
   /* tạo hiệu ứng chuyển động mượt cho hover */
@@ -127,7 +127,7 @@ header .text-right {
 }
 
 .navbar .dropdown .dropdownmenu {
-  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
   opacity: 0;
   transform: scale(1.1);
   transition: all 0.5s;
@@ -138,7 +138,7 @@ header .text-right {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 10em;
+  width: 13em;
   padding: 0.5rem;
 }
 
@@ -177,5 +177,42 @@ header .text-right {
   width: 0;
   padding: 5px;
   border-radius: 50%;
+}
+
+.Services {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6eb;
+}
+
+.Services img {
+  width: 50px;
+  margin: 10px 0;
+}
+
+.Services .Services_item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  line-height: 25px;
+}
+
+.Services .Services_item p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.Services .Services_item .text_upercase {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.Services .Services_item .text {
+  color: #7c7c80;
+  font-size: 15px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Header extends Component {
     render() {
         return (
-          <header className="container">
+          <header className="container-fluid">
             <p className="text-right">
               <i className="bi bi-telephone-fill" />
               <span className="border-right mx-2 pr-3">0123 456 789</span>

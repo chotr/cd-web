@@ -29,8 +29,8 @@ header{
     content: '';
     display: block;
     height: 2px;
-    background-image: linear-gradient(to right, #fbbd61, #ec7532);
-    box-shadow: 0 0 20px 0 #fbbd61;
+    background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+    box-shadow: 0 0 20px 0 #88d0ff;
     /* ẩn chiều dài đường line */
     width: 0;
     /* tạo hiệu ứng chuyển động mượt cho hover */
@@ -70,7 +70,7 @@ header .text-right{
     border-spacing: 5px;
 }
 .navbar .dropdown .dropdownmenu{
-    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+    background-image: linear-gradient(to right, #88d0ff, #db8cfc);
     opacity: 0;
     transform: scale(1.1);
     transition: all 0.5s;
@@ -81,7 +81,7 @@ header .text-right{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 10em;
+    width: 13em;
     padding: 0.5rem;
     
 }
