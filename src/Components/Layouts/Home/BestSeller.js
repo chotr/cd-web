@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import ProductItem from "../../General/ProductItem";
 
-export default class TopNewPro extends Component {
+export default class BestSeller extends Component {
   render() {
     return (
-      <div className="topNewProduct">
+      <div className="bestSeller">
         <div className="productTitle">
-          <h1 className="text">TOP SẢN PHẨM MỚI NHẤT</h1>
+          <h1 className="text">TOP SẢN PHẨM BÁN CHẠY</h1>
         </div>
         <ProductItem />
       </div>

@@ -1,0 +1,21 @@
+.bestSeller {
+  padding: $pd-3 $pd-3;
+  width: 95%;
+  margin: auto;
+  .productTitle {
+    text-align: center;
+    margin-bottom: $mg-2;
+    @include styleText($color-black-0, $fs-4, $fw-bold-0);
+  }
+  .pro_item {
+    .btn-buy {
+      background-image: linear-gradient(to right, #88d0ff, #9e88ff);
+    }
+    .btn-add {
+      background-image: linear-gradient(to right, #9e88ff, #db8cfc);
+    }
+    .price_pro {
+      text-align: center;
+    }
+  }
+}

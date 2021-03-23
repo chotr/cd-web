@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../Header'
+import BestSeller from './BestSeller'
 import Carousel from './Carousel'
 import Services from './Services'
 import TopNewPro from './TopNewPro'
@@ -15,6 +16,7 @@ export default class Home extends Component {
                 <Services />
                 <TopNewPro />
                 <Type />
+                <BestSeller />
             </div>
         )
     }

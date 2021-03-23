@@ -266,13 +266,43 @@ header .account .dropdown-menu {
 .typeShoes .type_content .type_item {
   position: relative;
   text-align: center;
+  cursor: pointer;
 }
 
 .typeShoes .type_content .type_item img {
+  position: relative;
   width: 320px;
+  transition: all 1s;
 }
 
-.typeShoes .type_content .see_now {
+.typeShoes .type_content .img_type {
+  border-radius: 10px;
+  width: 81%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.typeShoes .type_content .img_type:hover img {
+  transform: scale(1.2);
+}
+
+.typeShoes .type_content .img_type::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  width: 75%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.typeShoes .see_now {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -280,14 +310,15 @@ header .account .dropdown-menu {
   margin-bottom: 25px;
 }
 
-.typeShoes .type_content .see_now .text {
+.typeShoes .see_now .text {
   text-transform: uppercase;
+  margin-bottom: 15px;
   color: #fff;
   font-size: 22px;
   font-weight: 600;
 }
 
-.typeShoes .type_content .see_now .btn_see_now {
+.typeShoes .see_now .btn_see_now {
   position: relative;
   border: 2px solid #fff;
   padding: 5px 20px;
@@ -298,8 +329,8 @@ header .account .dropdown-menu {
   font-weight: normal;
 }
 
-.typeShoes .type_content .see_now .btn_see_now:before {
-  content: '';
+.typeShoes .see_now .btn_see_now:before {
+  content: "";
   background-image: linear-gradient(to right, #88d0ff, #db8cfc);
   width: 125%;
   height: 100%;
@@ -309,19 +340,41 @@ header .account .dropdown-menu {
   top: 0;
   z-index: 10;
   transform: skewX(30deg) translateX(-105%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.typeShoes .type_content .see_now .btn_see_now:hover:before {
+.typeShoes .see_now .btn_see_now:hover:before {
   transform: skewX(30deg) translateX(-5%);
 }
 
-.typeShoes .type_content .see_now .btn_see_now span {
+.typeShoes .see_now .btn_see_now span {
   z-index: 22;
   position: relative;
 }
 
-.typeShoes .type_content .img_type {
-  border-radius: 20%;
+.bestSeller {
+  padding: 40px 40px;
+  width: 95%;
+  margin: auto;
+}
+
+.bestSeller .productTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.bestSeller .pro_item .btn-buy {
+  background-image: linear-gradient(to right, #88d0ff, #9e88ff);
+}
+
+.bestSeller .pro_item .btn-add {
+  background-image: linear-gradient(to right, #9e88ff, #db8cfc);
+}
+
+.bestSeller .pro_item .price_pro {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
