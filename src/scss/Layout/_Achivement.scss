@@ -1,0 +1,12 @@
+.achivement{
+    background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+    padding:$pd-3 - 10 0;
+    .list{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    p{
+        // @include styleText($color-)
+    }
+}

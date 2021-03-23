@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import BackTop from '../../General/BackTop'
 import Header from '../Header'
+import Achivement from './Achivement'
 import BestSeller from './BestSeller'
 import Carousel from './Carousel'
 import Services from './Services'
@@ -17,6 +19,8 @@ export default class Home extends Component {
                 <TopNewPro />
                 <Type />
                 <BestSeller />
+                <Achivement />
+                <BackTop />
             </div>
         )
     }

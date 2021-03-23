@@ -377,4 +377,40 @@ header .account .dropdown-menu {
 .bestSeller .pro_item .price_pro {
   text-align: center;
 }
+
+.achivement {
+  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+  padding: 30px 0;
+}
+
+.achivement .list {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.scroll-to-top svg {
+  padding: 10px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+  box-shadow: 0px 3px 31px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=main.css.map */

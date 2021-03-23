@@ -1,0 +1,26 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+  padding: $pd-1;
+
+  svg {
+    padding: $pd-1;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+    -webkit-box-shadow: 0px 3px 31px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 31px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 31px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
