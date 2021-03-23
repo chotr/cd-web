@@ -3,6 +3,7 @@ import Header from '../Header'
 import Carousel from './Carousel'
 import Services from './Services'
 import TopNewPro from './TopNewPro'
+import Type from './Type'
 
 
 export default class Home extends Component {
@@ -13,6 +14,7 @@ export default class Home extends Component {
                 <Carousel />
                 <Services />
                 <TopNewPro />
+                <Type />
             </div>
         )
     }

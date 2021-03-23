@@ -9,7 +9,7 @@ export default class Services extends Component {
             <div className="Services_item col-md-3 col-xl-3">
               <img src="./images/truck .png" alt="Delivery" />
               <span className="Service_text">
-                <p className="text_upercase">giao hàng toang quốc</p>
+                <p className="text_upercase">giao hàng toàn quốc</p>
                 <p className="text">Vận chuyển khắp Việt Nam</p>
               </span>
             </div>
