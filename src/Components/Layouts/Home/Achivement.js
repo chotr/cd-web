@@ -80,7 +80,7 @@ export default class Achivement extends Component {
                   className={style.countup}
                   //   decimals={1}
                   start={0}
-                  end={this.state.didViewCountUp ? 50 : 0}
+                  end={this.state.didViewCountUp ? 20 : 0}
                   duration={3}
                 />
               </VisibilitySensor>

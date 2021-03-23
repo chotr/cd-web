@@ -4,6 +4,7 @@ import Header from '../Header'
 import Achivement from './Achivement'
 import BestSeller from './BestSeller'
 import Carousel from './Carousel'
+import EmailForSale from './EmailForSale'
 import Services from './Services'
 import TopNewPro from './TopNewPro'
 import Type from './Type'
@@ -20,6 +21,7 @@ export default class Home extends Component {
                 <Type />
                 <BestSeller />
                 <Achivement />
+                <EmailForSale/>
                 <BackTop />
             </div>
         )

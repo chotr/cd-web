@@ -192,6 +192,7 @@ header .account .dropdown-menu {
 }
 
 .Services {
+  background-color: #e6e6eb;
   padding-top: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e6e6eb;
@@ -380,13 +381,26 @@ header .account .dropdown-menu {
 
 .achivement {
   background-image: linear-gradient(to right, #88d0ff, #db8cfc);
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .achivement .list {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+.achivement p {
+  color: #29303b;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.achivement h1 {
+  color: #29303b;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .scroll-to-top {
@@ -412,5 +426,84 @@ header .account .dropdown-menu {
   to {
     opacity: 1;
   }
+}
+
+.formForSale {
+  padding: 40px 40px;
+}
+
+.formForSale .form_content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.formForSale .form_content img {
+  width: 35px;
+}
+
+.formForSale .form_content .icon {
+  padding: 0 20px;
+}
+
+.formForSale .form_content .text {
+  color: #29303b;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.formForSale .form_input .form-outline {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.formForSale .form_input input {
+  border: none;
+  width: 100%;
+  background-color: #a1a7b3;
+}
+
+.formForSale .form_input input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.formForSale .form_input input::placeholder {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.formForSale .form_input .btn-primary {
+  padding: 5px 25px;
+  margin-left: 25px;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 0px 1px 10px -1px black;
+}
+
+.formForSale .form_input .btn-primary .text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.formForSale .form_input .btn-primary:focus {
+  outline: none;
+}
+
+.formForSale .form_input .input-group {
+  padding: 8px 10px;
+  background-color: #a1a7b3;
+  border-radius: 25px;
+}
+
+.formForSale .form_input .submit {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 /*# sourceMappingURL=main.css.map */

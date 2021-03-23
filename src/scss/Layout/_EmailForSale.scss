@@ -1,0 +1,63 @@
+.formForSale {
+  padding: $pd-3 $pd-3;
+  .form_content {
+    width: 100%;
+    margin: 0 auto;
+    img {
+      width: 35px;
+    }
+    .icon {
+      padding: 0 $pd-2;
+    }
+    .text {
+      @include styleText($color-black-1, $fs-2, $fw-bold-0);
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+  .form_input {
+    .form-outline {
+      width: 100%;
+      padding: 0 !important;
+    }
+    input {
+      border: none;
+      width: 100%;
+      background-color: $color-gray-2;
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+      &::placeholder{
+          @include styleText($color-white-0, $fs-2 - 3, $fw-bold-0);
+      }
+    }
+    .btn-primary {
+      padding: $pd-0 $pd-2 + 5;
+      margin-left: $mg-2;
+      border-radius: 20px;
+      outline: none;
+      -webkit-box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 1);
+      box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 1);
+      .text {
+        @include styleText($color-white-0, $fs-1, $fw-normal);
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    .input-group {
+      padding: $pd-1 - 2 $pd-1;
+      background-color: $color-gray-2;
+      border-radius: 25px;
+    }
+    .submit {
+      padding: 0 !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}
