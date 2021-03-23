@@ -112,3 +112,9 @@ header .text-right{
     letter-spacing: 3px;
     color: #fff;
 }
+.Nav__black{
+    display: fixed;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+  }
