@@ -5,11 +5,34 @@ export default class Header extends Component {
     // const computedClassName = props.active ? 'active' : 'muted';
     return (
       <header className="container-fluid">
-        <p className="text-right">
-          <i className="bi bi-telephone-fill" />
-          <span className="border-right mx-2 pr-3">0123 456 789</span>
-          <i className="bi bi-search" />
-        </p>
+        <div className="account row">
+          <div class="dropdown">
+            <div
+              class="dropAcc"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>
+                <span className="icon_user">
+                  <img src="./images/user.png" alt="" />
+                </span>
+              </span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">
+                Đăng nhập
+              </a>
+              <a class="dropdown-item" href="#">
+                Đăng kí
+              </a>
+            </div>
+          </div>
+          <div className="cart">
+            <img src="./images/cart.png" alt="cart"/>
+          </div>
+        </div>
         <nav id="non-fixed" className="navbar navbar-expand-lg">
           <a className="navbar-brand" href="#">
             <img src="./images/xshop-light.png" alt="" />

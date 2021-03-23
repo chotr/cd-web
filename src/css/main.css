@@ -97,14 +97,6 @@ header {
   width: 100%;
 }
 
-header .text-right {
-  margin: 0;
-}
-
-header .text-right i:last-child {
-  font-size: 10px;
-}
-
 header .navbar {
   padding: 0 1rem;
   position: relative;
@@ -115,15 +107,6 @@ header .navbar {
 
 #navbarMovie .navbar-nav .nav-item:hover::after {
   width: 100%;
-}
-
-header .text-right {
-  font-size: 14px;
-  font-weight: 700;
-  width: 100%;
-  color: #fff;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  border-spacing: 5px;
 }
 
 .navbar .dropdown .dropdownmenu {
@@ -177,6 +160,28 @@ header .text-right {
   z-index: 2;
   background: rgba(0, 0, 0, 0.95);
   width: 100%;
+}
+
+header .account {
+  margin-top: 25px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .account img {
+  width: 25px;
+  cursor: pointer;
+}
+
+header .account .cart {
+  padding: 0 20px;
+}
+
+header .account .dropdown-menu {
+  left: -30px !important;
+  margin: 0.625rem 0 0 !important;
+  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
 }
 
 .carousel .carousel-indicators li {
