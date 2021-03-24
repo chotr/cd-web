@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import BackTop from '../../General/BackTop'
+import Footer from '../Footer/Footer'
 import Header from '../Header'
 import Achivement from './Achivement'
 import BestSeller from './BestSeller'
@@ -22,6 +23,7 @@ export default class Home extends Component {
                 <BestSeller />
                 <Achivement />
                 <EmailForSale/>
+                <Footer />
                 <BackTop />
             </div>
         )

@@ -430,6 +430,7 @@ header .account .dropdown-menu {
 
 .formForSale {
   padding: 40px 40px;
+  background: #2c2c35;
 }
 
 .formForSale .form_content {
@@ -446,11 +447,16 @@ header .account .dropdown-menu {
 }
 
 .formForSale .form_content .text {
-  color: #29303b;
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0;
   text-transform: uppercase;
+}
+
+.formForSale .form_content .form_titlle {
+  display: flex;
+  align-items: center;
 }
 
 .formForSale .form_input .form-outline {

@@ -1,5 +1,6 @@
 .formForSale {
   padding: $pd-3 $pd-3;
+  background: $color-black-2;
   .form_content {
     width: 100%;
     margin: 0 auto;
@@ -10,9 +11,13 @@
       padding: 0 $pd-2;
     }
     .text {
-      @include styleText($color-black-1, $fs-2, $fw-bold-0);
+      @include styleText($color-white-0, $fs-2, $fw-bold-0);
       margin-bottom: 0;
       text-transform: uppercase;
+    }
+    .form_titlle {
+      display: flex;
+      align-items: center;
     }
   }
   .form_input {
@@ -29,8 +34,8 @@
         border: none;
         box-shadow: none;
       }
-      &::placeholder{
-          @include styleText($color-white-0, $fs-2 - 3, $fw-bold-0);
+      &::placeholder {
+        @include styleText($color-white-0, $fs-2 - 3, $fw-bold-0);
       }
     }
     .btn-primary {
@@ -44,7 +49,7 @@
       .text {
         @include styleText($color-white-0, $fs-1, $fw-normal);
       }
-      &:focus{
+      &:focus {
         outline: none;
       }
     }
