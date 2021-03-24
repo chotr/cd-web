@@ -1,38 +1,13 @@
+/* eslint-disable no-lone-blocks */
 import React, { Component } from "react";
 
 export default class Header extends Component {
+  
   render() {
+    
     // const computedClassName = props.active ? 'active' : 'muted';
     return (
       <header className="container-fluid">
-        <div className="account row">
-          <div class="dropdown">
-            <div
-              class="dropAcc"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span>
-                <span className="icon_user">
-                  <img src="./images/user.png" alt="" />
-                </span>
-              </span>
-            </div>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">
-                Đăng nhập
-              </a>
-              <a class="dropdown-item" href="#">
-                Đăng kí
-              </a>
-            </div>
-          </div>
-          <div className="cart">
-            <img src="./images/cart.png" alt="cart"/>
-          </div>
-        </div>
         <nav id="non-fixed" className="navbar navbar-expand-lg">
           <a className="navbar-brand" href="#">
             <img src="./images/xshop-light.png" alt="" />
@@ -62,6 +37,39 @@ export default class Header extends Component {
                   <a className="dropdownitem" href="#">
                     Action
                   </a>
+                </div>
+              </li>
+              <li className="nav-item account ">
+                <div className="row">
+                  <div class="dropdown">
+                    <div
+                      class="dropAcc"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span>
+                        <span className="icon_user">
+                          <img src="./images/user.png" alt="" />
+                        </span>
+                      </span>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">
+                        Đăng nhập
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Đăng kí
+                      </a>
+                    </div>
+                  </div>
+                  <div className="cart">
+                    <img src="./images/cart.png" alt="cart" />
+                  </div>
                 </div>
               </li>
             </ul>

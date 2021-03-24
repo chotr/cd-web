@@ -1,4 +1,4 @@
-.topNewProduct{
+.topNewProduct, .bestSeller{
     padding: $pd-3 $pd-3;
     width: 95%;
     margin: auto;
@@ -8,6 +8,9 @@
         @include styleText($color-black-0, $fs-4, $fw-bold-0);
     }
     .pro_item{
+        h5{
+            @include styleText($color-black-1, $fs-0, $fw-normal);
+        }
         .btn-buy{
             background-image: linear-gradient(to right, #88d0ff,#9e88ff);
         }

@@ -54,8 +54,8 @@ header .border-right {
 }
 
 header {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 40;
   top: 0;
   right: 0;
   left: 0;
@@ -67,10 +67,6 @@ header {
   width: 10rem;
 }
 
-#navbarMovie .navbar-nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 #navbarMovie .navbar-nav .nav-item {
   text-transform: uppercase;
   position: relative;
@@ -79,7 +75,7 @@ header {
 }
 
 #navbarMovie .navbar-nav .nav-item::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   background-image: linear-gradient(to right, #88d0ff, #db8cfc);
@@ -87,7 +83,7 @@ header {
   /* ẩn chiều dài đường line */
   width: 0;
   /* tạo hiệu ứng chuyển động mượt cho hover */
-  transition: all .3s;
+  transition: all 0.3s;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -162,11 +158,17 @@ header .navbar {
   width: 100%;
 }
 
+header {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  padding-top: 15px;
+  background: #2c353bd9;
+}
+
 header .account {
-  margin-top: 25px;
-  padding: 0 40px;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 5px;
+  padding-left: 40px !important;
+  padding-right: 0 !important;
 }
 
 header .account img {
@@ -182,6 +184,14 @@ header .account .dropdown-menu {
   left: -30px !important;
   margin: 0.625rem 0 0 !important;
   background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+}
+
+header .account::after {
+  display: none !important;
+}
+
+header .navbar-brand {
+  padding-top: 0 !important;
 }
 
 .carousel .carousel-indicators li {
@@ -229,13 +239,13 @@ header .account .dropdown-menu {
   font-weight: normal;
 }
 
-.topNewProduct {
+.topNewProduct, .bestSeller {
   padding: 40px 40px;
   width: 95%;
   margin: auto;
 }
 
-.topNewProduct .productTitle {
+.topNewProduct .productTitle, .bestSeller .productTitle {
   text-align: center;
   margin-bottom: 25px;
   color: #000;
@@ -243,15 +253,21 @@ header .account .dropdown-menu {
   font-weight: 600;
 }
 
-.topNewProduct .pro_item .btn-buy {
+.topNewProduct .pro_item h5, .bestSeller .pro_item h5 {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.topNewProduct .pro_item .btn-buy, .bestSeller .pro_item .btn-buy {
   background-image: linear-gradient(to right, #88d0ff, #9e88ff);
 }
 
-.topNewProduct .pro_item .btn-add {
+.topNewProduct .pro_item .btn-add, .bestSeller .pro_item .btn-add {
   background-image: linear-gradient(to right, #9e88ff, #db8cfc);
 }
 
-.topNewProduct .pro_item .price_pro {
+.topNewProduct .pro_item .price_pro, .bestSeller .pro_item .price_pro {
   text-align: center;
 }
 
@@ -351,32 +367,6 @@ header .account .dropdown-menu {
 .typeShoes .see_now .btn_see_now span {
   z-index: 22;
   position: relative;
-}
-
-.bestSeller {
-  padding: 40px 40px;
-  width: 95%;
-  margin: auto;
-}
-
-.bestSeller .productTitle {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #000;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.bestSeller .pro_item .btn-buy {
-  background-image: linear-gradient(to right, #88d0ff, #9e88ff);
-}
-
-.bestSeller .pro_item .btn-add {
-  background-image: linear-gradient(to right, #9e88ff, #db8cfc);
-}
-
-.bestSeller .pro_item .price_pro {
-  text-align: center;
 }
 
 .achivement {
@@ -511,5 +501,44 @@ header .account .dropdown-menu {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+footer {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 40px;
+}
+
+footer .logo_footer img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+footer .logo_footer {
+  padding-top: 0 !important;
+}
+
+footer .footer_sup {
+  padding-top: 60px;
+}
+
+footer .footer_sup a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 33px;
+  transition: all 0.5;
+}
+
+footer .footer_sup a:hover {
+  color: #a1a7b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer .footer_sup h5 {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
