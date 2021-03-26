@@ -1,14 +1,15 @@
 import ProductItem from "./Components/General/ProductItem";
+import FormSignIn from "./Components/Layouts/FormSignInUp/FormSignIn";
+import FormSignUp from "./Components/Layouts/FormSignInUp/FormSignUp";
 import Home from "./Components/Layouts/Home";
-// import Header from './Components/Layouts/Header';
 
 
 function App() {
   return (
     <>
-    {/* <Pppp /> */}
-    {/* <Header /> */}
-    <Home />
+    {/* <Home /> */}
+    <FormSignIn />
+    {/* <FormSignUp /> */}
     </>
   );
 }

@@ -1,13 +1,16 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .App {
@@ -47,6 +50,10 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+html {
+  height: 100%;
 }
 
 header .border-right {
@@ -540,5 +547,82 @@ footer .footer_sup a:hover {
 
 footer .footer_sup h5 {
   padding-bottom: 10px;
+}
+
+.formSignIn,
+.formSignUp {
+  padding-top: 40px;
+  height: 100%;
+}
+
+.formSignIn .row,
+.formSignUp .row {
+  width: 100%;
+  margin: auto auto;
+}
+
+.formSignIn .myform,
+.formSignUp .myform {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+}
+
+.formSignIn .tx-tfm,
+.formSignUp .tx-tfm {
+  text-transform: uppercase;
+}
+
+.formSignIn .mybtn,
+.formSignUp .mybtn {
+  border-radius: 50px;
+}
+
+.formSignIn .login-or,
+.formSignUp .login-or {
+  position: relative;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.formSignIn .span-or,
+.formSignUp .span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+
+.formSignIn .hr-or,
+.formSignUp .hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.formSignIn .google,
+.formSignUp .google {
+  color: #666;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid lightgrey;
 }
 /*# sourceMappingURL=main.css.map */
