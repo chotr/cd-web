@@ -4,9 +4,58 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
-  background-attachment: fixed;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
 }
 
 code {
@@ -61,7 +110,7 @@ header .border-right {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   z-index: 40;
   top: 0;
   right: 0;
@@ -169,7 +218,6 @@ header {
   padding-left: 40px !important;
   padding-right: 40px !important;
   padding-top: 15px;
-  background: #2c353bd9;
 }
 
 header .account {
@@ -201,6 +249,7 @@ header .navbar-brand {
   padding-top: 0 !important;
 }
 
+/*Home**/
 .carousel .carousel-indicators li {
   height: 0;
   width: 0;

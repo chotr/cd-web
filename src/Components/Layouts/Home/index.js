@@ -14,7 +14,7 @@ import Type from './Type'
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="home">
                 <Header />
                 <Carousel />
                 <Services />
@@ -25,6 +25,7 @@ export default class Home extends Component {
                 <EmailForSale/>
                 <Footer />
                 <BackTop />
+               
             </div>
         )
     }

@@ -15,7 +15,7 @@ export default class FormSignUp extends Component {
                 </div>
                 <form action="#" name="registration">
                   <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Tên</label>
+                    <label htmlFor="exampleInputFN">Tên</label>
                     <input
                       type="text"
                       name="firstname"
@@ -26,7 +26,7 @@ export default class FormSignUp extends Component {
                     />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Họ</label>
+                    <label htmlFor="exampleInputLN">Họ</label>
                     <input
                       type="text"
                       name="lastname"
@@ -47,8 +47,19 @@ export default class FormSignUp extends Component {
                       placeholder="Nhập email. . ."
                     />
                   </div>
+  <div className="form-group">
+                    <label htmlFor="exampleInputPhone">Số điện thoại</label>
+                    <input
+                      type="phone"
+                      name="phone"
+                      id="phone"
+                      className="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Nhập số điện thoại. . ."
+                    />
+                  </div>
                   <div className="form-group">
-                    <label htmlFor="exampleInputEmail1">Mật khẩu</label>
+                    <label htmlFor="exampleInputPass">Mật khẩu</label>
                     <input
                       type="password"
                       name="password"

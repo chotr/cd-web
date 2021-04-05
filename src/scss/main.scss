@@ -1,13 +1,68 @@
 body {
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, #88d0ff, #db8cfc);
-  background-attachment: fixed;
+  // background-image: linear-gradient(to right, #88d0ff, #db8cfc);
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
 }
 
 code {
@@ -59,13 +114,18 @@ code {
 @import "./Helper/mixin";
 @import "./Helper/Variables";
 @import "./Layout/Header";
-@import "./Layout/Carousel";
-@import "./Layout/Services";
-@import "./Layout/TopNewPro";
-@import "./Layout/TypeShoes";
-@import "./Layout/BestSeller";
-@import "./Layout/Achivement";
-@import "./Layout/BackToTop";
-@import "./Layout/EmailForSale";
+
+//Layout
+
+/*Home**/ 
+@import "./Layout/Home/Carousel";
+@import "./Layout/Home/Services";
+@import "./Layout/Home/TopNewPro";
+@import "./Layout/Home/TypeShoes";
+@import "./Layout/Home/BestSeller";
+@import "./Layout/Home/Achivement";
+@import "./Layout/Home/BackToTop";
+@import "./Layout/Home/EmailForSale";
+@import "./Layout/Home/Home";
 @import "./Layout/Footer";
 @import "./Layout/FormSign";

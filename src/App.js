@@ -2,15 +2,70 @@ import ProductItem from "./Components/General/ProductItem";
 import FormSignIn from "./Components/Layouts/FormSignInUp/FormSignIn";
 import FormSignUp from "./Components/Layouts/FormSignInUp/FormSignUp";
 import Home from "./Components/Layouts/Home";
-
+import ProductPage from "./Components/Layouts/ProductPage";
+import Particles from "react-particles-js";
 
 function App() {
   return (
-    <>
-    {/* <Home /> */}
-    <FormSignIn />
-    {/* <FormSignUp /> */}
-    </>
+    <div indicators="app">
+      <Home />
+      <Particles id="particles-js"
+        params={{
+          particles: {
+            number: {
+              value: 160,
+              density: {
+                enable: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                speed: 4,
+                size_min: 0.3,
+              },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              random: true,
+              speed: 1,
+              direction: "top",
+              out_mode: "out",
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0,
+              },
+              repulse: {
+                distance: 400,
+                duration: 4,
+              },
+            },
+          },
+        }}
+      />
+      {/* <FormSignIn /> */}
+      {/* <FormSignUp /> */}
+      {/* <ProductPage /> */}
+    </div>
   );
 }
 
